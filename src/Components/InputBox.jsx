@@ -10,8 +10,10 @@ function InputBox({
   currencyDisabled = false,
   className = "",
 }) {
+  console.log("onAmountChange=>",onAmountChange);
+  console.log("onCurrencyChange=>",onCurrencyChange);
    const amountInputId = useId();
-   console.log(amountInputId);
+   console.log("Unique Id => ",amountInputId);
   return (
     <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
       <div className="w-1/2">
